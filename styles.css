@@ -1,17 +1,89 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
+    padding: 20px;
+    margin: 0;
+    background-image: url('https://img.freepik.com/foto-gratis/fondo-oscuro-abstracto-ondas-coloridas-que-fluyen_1048-13124.jpg');
+    background-size: cover;
+    background-attachment: fixed;
 }
 
-#characters-container {
+.login-container, .main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+}
+
+input {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: rgb(22, 88, 90);
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: #54be96;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.video-container {
+    margin: 20px 0;
+}
+
+.carousel-container {
+    margin: 20px 0;
+}
+
+.character-grid {
     display: flex;
     flex-wrap: wrap;
+    gap: 10px;
     justify-content: center;
 }
 
-.character-card {
+.card {
     border: 1px solid #ccc;
-    margin: 10px;
     padding: 10px;
     width: 150px;
+    box-sizing: border-box;
+    flex: 1 1 150px;
+    margin: 10px;
+    
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card h3 {
+    font-size: 16px;
+    margin: 10px 0 0 0;
+}
+
+@media (max-width: 600px) {
+    .card {
+        width: 100px;
+    }
 }
