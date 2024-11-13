@@ -1,3 +1,4 @@
+/* Estilos previos */
 body {
     font-family: Arial, sans-serif;
     text-align: center;
@@ -31,14 +32,14 @@ button {
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
-    background-color: rgb(22, 88, 90);
+    background-color: #4CAF50;
     color: white;
     border: none;
     border-radius: 10px;
 }
 
 button:hover {
-    background-color: #54be96;
+    background-color: #45a049;
 }
 
 img {
@@ -69,7 +70,7 @@ img {
     box-sizing: border-box;
     flex: 1 1 150px;
     margin: 10px;
-    
+    background-color: white;  /* Fondo blanco para las tarjetas */
 }
 
 .card img {
@@ -80,6 +81,16 @@ img {
 .card h3 {
     font-size: 16px;
     margin: 10px 0 0 0;
+}
+
+.footer {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
 }
 
 @media (max-width: 600px) {
